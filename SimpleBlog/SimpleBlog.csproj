@@ -39,7 +39,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GurkBurk">
+      <HintPath>..\packages\nbehave.0.6.2\lib\net40\GurkBurk.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.7.0\lib\net45\JetBrains.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NBehave.Gherkin">
+      <HintPath>..\packages\nbehave.0.6.2\lib\net40\NBehave.Gherkin.dll</HintPath>
+    </Reference>
+    <Reference Include="NBehave.Narrator.Framework">
+      <HintPath>..\packages\nbehave.0.6.2\lib\net40\NBehave.Narrator.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -148,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Posts\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resharper.feature" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Auth\Login.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
