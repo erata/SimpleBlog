@@ -14,7 +14,22 @@
         <h1>
             <a href="@Url.RouteUrl("home")">Simple Blog</a>
         </h1>
+        
+        @if (User.Identity.IsAuthenticated)
+        {
+            <p>Wlecome back, @User.Identity.Name</p>
+            <a href="@Url.RouteUrl("logout")">Logout</a>
+
+            <!-- If admin, give them link to View posts -->
+            if (User.IsInRole("admin"))
+            {
+                <a href="@Url.Action("index", "Posts", new{area="admin"})">Views posts in admin</a>
+            }
+        }
+        else
+        {
             <a href="@Url.RouteUrl("login")">Login</a>
+        }
     </header>
     
     <!-- INSERT VIEW HERE -->

@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace SimpleBlog.Areas.Admin.Controllers
 {
+    // Lock controller from users who are not Logged in as "admin"
+    [Authorize(Roles = "admin")]
     public class UsersController : Controller
     {
         public ActionResult Index()
