@@ -9,8 +9,6 @@
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Standard JetBrains ReSharper code annotation attributes implementation</description>
-    <releaseNotes />
     <copyright>Copyright 2007-2012 JetBrains s.r.o.</copyright>
-    <language />
   </metadata>
 </package>
