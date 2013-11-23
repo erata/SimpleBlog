@@ -53,6 +53,9 @@
       <HintPath>..\packages\JetBrains.Annotations.7.0\lib\net45\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.7.4\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="NBehave.Gherkin">
       <HintPath>..\packages\nbehave.0.6.2\lib\net40\NBehave.Gherkin.dll</HintPath>
     </Reference>
