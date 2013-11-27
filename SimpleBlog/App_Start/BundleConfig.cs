@@ -1,6 +1,4 @@
-﻿using System.Web.Http;
-using System.Web.Optimization;
-using Microsoft.Ajax.Utilities;
+﻿using System.Web.Optimization;
 
 namespace SimpleBlog
 {
@@ -23,7 +21,8 @@ namespace SimpleBlog
                 .Include("~/scripts/jquery-2.0.2.js")
                 .Include("~/scripts/jquery.validate.js")
                 .Include("~/scripts/jquery.validate.unobtrusive.js")
-                .Include("~/scripts/bootstrap.js"));
+                .Include("~/scripts/bootstrap.js")
+                .Include("~/areas/admin/scripts/Forms.js"));
 
             //Frontend Scripts
             bundles.Add(new ScriptBundle("~/scripts")
