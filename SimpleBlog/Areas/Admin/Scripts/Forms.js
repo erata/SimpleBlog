@@ -1,4 +1,4 @@
-﻿$(document).ready(function() {
+﻿$(document).ready(function () {
 
     $("a[data-post]").click(function(e) {
         e.preventDefault();

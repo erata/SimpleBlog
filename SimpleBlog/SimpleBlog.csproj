@@ -43,6 +43,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="BCrypt.Net">
+      <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
     <Reference Include="FluentMigrator">
       <HintPath>..\packages\FluentMigrator.1.1.1.0\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
@@ -179,6 +182,7 @@
     <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Users\ResetPassword.cshtml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="LICENSE.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -249,8 +253,7 @@
           <IISUrl>http://localhost:57177/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

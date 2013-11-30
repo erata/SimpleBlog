@@ -26,7 +26,7 @@
                 <td>{todo}</td>
                 <td>
                     <div class="btn-group">
-                        <a href="@Url.Action("edit", new{user.Id})" class="btn btn-xs btn-primary">
+                        <a href="@Url.Action("edit", new {user.Id})" class="btn btn-xs btn-primary">
                             <i class="glyphicon glyphicon-edit"></i>
                             Edit
                         </a>
@@ -34,7 +34,7 @@
                             <i class="glyphicon glyphicon-lock"></i>
                             Reset Password
                         </a>
-                        <a href="@Url.Action("delete", new{user.Id})" class="btn btn-xs btn-danger" data-post="Are you sure you want to delete @user.Username?">
+                        <a href="@Url.Action("Delete", new {user.Id})" class="btn btn-xs btn-danger" data-post="Are you sure you want to delete">
                             <i class="glyphicon glyphicon-remove"></i>
                             Delete
                         </a>
