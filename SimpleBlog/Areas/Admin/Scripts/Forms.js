@@ -1,19 +1,23 @@
-﻿$(document).ready(function () {
-
+$(document).ready(function() {
     $("a[data-post]").click(function(e) {
         e.preventDefault();
 
         var $this = $(this);
+
         var message = $this.data("post");
 
         if (message && !confirm(message))
             return;
-        
-       $("<form>")
+        // AntiForgeryToken code
+        var antiForgeryToken = $("#anti-forgery-form input");
+        var antiForgeryInput = $("<input type='hidden'>").attr("name", antiForgeryToken.attr("name")).val(antiForgeryToken.val());
+        //AntiForgeryToken Code Ends
+
+        $("<form>")
             .attr("method", "post")
             .attr("action", $this.attr("href"))
-            .appendTo(document.body)
-            .submit(); 
+            .append(antiForgeryInput)
+                .appendTo(document.body)
+                .submit();
     });
-    
 });
